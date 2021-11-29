@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datetime app</title>
+    <script type="module" src="./src/main.js"></script>
+    <script src="./src/howler.js"></script>
+</head>
+
+<body>
+    <h2>Выберите раздел: </h2>
+<div class="demo">
+    <div>
+      
+            
+            <form id="calcDate">
+                <input type="checkbox" id="hd-1" class="hide"/>
+                <label for="hd-1">Калькулятор дат</label>
+                <div>
+                   <label for="dateFrom">
+                    Первая дата:
+                    <input type="date" name="dateFrom" id="dateFrom">
+                   </label>
+                   <label for="dateTo">
+                     Вторая дата:
+                    <input type="date" name="dateTo" id="dateTo">
+                    </label>
+                    <button type="submit">Рассчитать промежуток</button>
+           
+                    <p id="output">
+                   </p>
+            </form>
+    </div>
+    
+        <div>
+            <form id="timer">
+             <input type="checkbox" id="hd-2" class="hide"/>
+             <label for="hd-2">Таймер</label>
+                <div>
+                     <form id="timer">
+                      <h3>Таймер</h3>  
+                      <div>  
+                        <input type="text" value="10" id="meaning">
+                        <input type="submit" value="start" onclick="start()">
+                        <input type="submit" value="stop" onclick="stop()">
+                      </div>
+                    </form>
+                </div>
+        </div>
+</div>
+       
+</body>
+
+</html>
