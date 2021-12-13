@@ -1,6 +1,7 @@
-import { Howl } from './howler.js';
 
-window.onload = function() {
+import { Howl } from '../libs/howler.js';
+
+function() {
   let sound = new Howl({
    src: ['./audio/song.mp3'],
   });

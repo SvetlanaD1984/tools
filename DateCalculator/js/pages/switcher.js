@@ -1,4 +1,4 @@
-import function timer from './timer'
+import  { timer } from './timer'
 import calcDate from './datecalc'
 
 function switcher(choose, datecalc, timer) {
